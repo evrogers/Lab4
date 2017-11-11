@@ -1,0 +1,45 @@
+﻿@model IEnumerable<WebApplication3.Risks>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.RiskName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RiskDescription)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AverageProbability)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TypeId)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RiskName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RiskDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AverageProbability)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypeId)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

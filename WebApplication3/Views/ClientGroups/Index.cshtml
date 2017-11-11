@@ -1,0 +1,33 @@
+﻿@model IEnumerable<WebApplication3.ClientGroups>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.GroupName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.GroupDescription)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GroupName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GroupDescription)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
