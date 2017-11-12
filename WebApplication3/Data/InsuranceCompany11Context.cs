@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace WebApplication3
+namespace WebApplication3.Data
 {
     public partial class InsuranceCompany11Context : DbContext
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace WebApplication3.Models
+namespace WebApplication3.Data
 {
     public class DbInitializer
     {
